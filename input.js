@@ -1244,5 +1244,8 @@
   global.someCls = css`
     color: hotpink;
   `
-  global.insertedCache = caches.inserted
+  global.insertedStyles = Object.keys(caches.inserted).reduce(
+    (str, key) => str + caches.inserted[key],
+    ''
+  )
 }.call(this))

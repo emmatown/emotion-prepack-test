@@ -2,5 +2,8 @@
   "dependencies": {
     "flow-bin": "^0.72.0",
     "prepack": "^0.2.34"
+  },
+  "scripts": {
+    "build": "prepack input.js --inlineExpressions --out output.js"
   }
 }
